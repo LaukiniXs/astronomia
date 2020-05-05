@@ -51,7 +51,6 @@ interface iBullet {
     bulletAngle: number;
     bulletVelocity: number;
     size: number;
-    img: HTMLImageElement;
 }
 
 interface iAsteroid {
@@ -97,7 +96,6 @@ canvas.onmousedown = function (event) {
             bulletAngle: shipRotation,
             bulletVelocity: velocity,
             size: 3,
-            img: bullet,
         });
     }
 };
