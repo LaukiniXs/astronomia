@@ -8,7 +8,6 @@ import {
     effect,
     createSmokeParticle
 } from "./effects";
-import bulletSrc from "./images/bullet.png";
 
 //        isPointInside([129, 100], polygon.map(function(relativeCoords) { return [ relativeCoords[0] + asX, relativeCoords[1] + asY ] })),
 
@@ -32,8 +31,6 @@ window.onfocus = function () {
 
 const shipThurst = createSmokeParticle("lime", 20, 20);
 const context = canvas.getContext("2d");
-const bullet = document.createElement("img");
-bullet.src = bulletSrc;
 let keysPressed: string[] = [];
 let previousTime = 0;
 let shipRotation = 0;
