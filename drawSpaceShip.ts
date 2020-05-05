@@ -1,7 +1,3 @@
-import shipSrc from "./images/ship.png";
-
-const ship = document.createElement("img");
-ship.src = shipSrc;
 
 export function drawSpaceShip(
     context: CanvasRenderingContext2D, 
