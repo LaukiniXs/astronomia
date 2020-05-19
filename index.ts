@@ -9,16 +9,20 @@ import {
     createSmokeParticle
 } from "./effects";
 
+
 //        isPointInside([129, 100], polygon.map(function(relativeCoords) { return [ relativeCoords[0] + asX, relativeCoords[1] + asY ] })),
 
 //        );
 
+
 const canvas = document.createElement("canvas");
 document.body.appendChild(canvas);
-canvas.style.backgroundColor = "black";
-canvas.style.outline = "1px solid red";
+canvas.style.background = "black";
+canvas.style.outline = "2px solid green";
+canvas.style.margin = "12px 50px";
 canvas.width = 1000;
 canvas.height = 580;
+canvas.style.position = "absolute";
 
 let onfocus = true;
 
@@ -68,10 +72,10 @@ const asteroids: Array<iAsteroid> = [];
 
 document.addEventListener("mousedown", function() {
 
-       const music = document.getElementById("backgroundMusic") as HTMLAudioElement;
+       const bgmusic = document.getElementById("backgroundMusic") as HTMLAudioElement;
 
-       music.volume = 0.05;
-       music.play();
+       bgmusic.volume = 0.02;
+       bgmusic.play();
 });
 
 document.onkeydown = function (event) {
@@ -150,6 +154,7 @@ function renderLoop(time: number) {
 
     if(shipDead != 0){
         document.getElementById("gameover").style.display = "block";
+        document.getElementById("gameover").style.zIndex = "20";
         }
 
     const shipWasDead = shipDead !== 0;
@@ -216,7 +221,7 @@ function renderLoop(time: number) {
             let collisionPointY4 = (collisionPointY1 + collisionPointY3) / 2;
             let collisionPointX5 = (collisionPointX1 + collisionPointX2) / 2;
             let collisionPointY5 = (collisionPointY1 + collisionPointY2) / 2;
-
+            
             let a = asteroids[i];
 
             if (isPointInside([collisionPointX1 - a.asteroidPosX, collisionPointY1 - a.asteroidPosY], a.points) === true) {
@@ -265,12 +270,14 @@ function renderLoop(time: number) {
 
     for (let a = 0; a < asteroids.length; a++) {
         for (let b = 0; b < bullets.length; b++) {
+            
             if (isPointInside([bullets[b].bulletPosX - asteroids[a].asteroidPosX, bullets[b].bulletPosY - asteroids[a].asteroidPosY], asteroids[a].points) === true) {
                 createAsteroidExplosion(asteroids[a].asteroidPosX, asteroids[a].asteroidPosY);
                 asteroids.splice(a, 1);
                 bullets.splice(b, 1);
                 a = a - 1;
                 score += 10;
+                
                 break;
             }
         }

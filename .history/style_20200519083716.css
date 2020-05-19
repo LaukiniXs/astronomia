@@ -1,0 +1,150 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+  background-color:  #949494;
+}
+#sidebar {
+    float: left;
+    background-color:#242322;
+    width: 10%;
+    height: 100%;
+}
+.button {
+  user-select: none;
+  float: left;
+    border: 1px solid black;
+    background: #3d3d3d;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    white-space: nowrap;
+    text-decoration: none;
+    width: 100%;
+    margin: 10px 0;
+    cursor: pointer;
+  }
+  .floatRight{
+    float: right;
+
+  }
+  .clearFloat{
+    clear: both;
+  }
+  a {
+   text-decoration: none; 
+    color: white;
+  }
+  #contents{
+    word-wrap: break-word;
+    float: left;
+    width: 40%;
+    height: 100%;
+    background-color: violet;
+  }
+  .contentText{
+    margin: 50px 10px;
+    font-size: 20px;
+  }
+  #splash {
+    user-select: none;
+    float: left;
+    margin: 0 2px;
+    z-index: 10;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    width: 1000px;
+    padding: 100px 0;
+    text-align: center;
+}
+
+#play-btn {
+    width: 150px;
+    height: 40px;
+    background-color: crimson;
+    border: 0px;
+}
+
+#title {
+    color: white;
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#controls {
+    color: #c9c9c9;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 40px;
+}
+
+.controlBtn {
+    font-weight: bold;
+    color: #f0f0f0;
+}
+
+#gameover {
+  float: left;
+  margin-left: 50px;
+  width: 1000px;
+  height: 580px;
+    display: none;
+    color: white;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    width: 1000px;
+    text-align: center;
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#tip{
+    user-select: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#game{
+  margin-top: 30px;
+  float: left;
+}
+#gamediv{
+  margin-top: 12px;
+  margin-left: 30px;
+  float: left;
+}
+#log{
+  float: left;
+}
+#gameoverText{
+  user-select: none;
+  margin-top: 200px;
+}
+#splash{
+  margin-top: 100px;
+  margin-left: 50px;
+}
+#textcontent1{
+  float: left;
+  height: 100%;
+  width: 40%;
+  word-wrap: break-word;
+  background-color: whitesmoke;
+}
+#homePageImg{
+  float: left;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+#gifholder{
+  float: left;
+  background-color: tomato;
+  width: 50%;
+  height: 100%;
+}
+#gifholder iframe{
+  width: 100%;
+  border: 0 solid;
+  -webkit-transform:scale(0.8);
+}

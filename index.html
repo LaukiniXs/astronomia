@@ -1,75 +1,33 @@
-<!DOCTYPE html>
 <html>
-
-<head>
-    <style>
-        #splash {
-            z-index: 10;
-            position: absolute;
-            background: rgba(0, 0, 0, 0.5);
-            width: 1000px;
-            padding: 100px 0;
-            text-align: center;
-        }
-
-        #play-btn {
-            width: 150px;
-            height: 40px;
-            background-color: crimson;
-            border: 0px;
-        }
-
-        #title {
-            color: white;
-            font-size: 60px;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        #controls {
-            color: #c9c9c9;
-            font-family: Arial, Helvetica, sans-serif;
-            padding-top: 40px;
-        }
-
-        .controlBtn {
-            font-weight: bold;
-            color: #f0f0f0;
-        }
-
-        #gameover {
-            display: none;
-            color: white;
-            position: absolute;
-            background: rgba(0, 0, 0, 0.5);
-            width: 1000px;
-            padding: 170px 0;
-            text-align: center;
-            font-size: 60px;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        #tip{
-            font-size: 20px;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-    </style>
-</head>
-
-<body>
-    <div id="splash">
-        <p id="title">ASTRONOMIA</p>
-        <button id="play-btn">PLAY</button>
-        <p id="controls"> Thrust forward - <span class="controlBtn">W</span> ;
-            Rotate Left - <span class="controlBtn">A</span> ;
-            Rotate Right - <span class="controlBtn">D</span> ;
-            Fire - <span class="controlBtn">Left Click</span> ;</p>
-    </div>
-    <div id="gameover">
-        <p>Game Over</p>
-        <p id="tip">Refresh the page to try again</p>
-    </div>
-    <div id="log"></div>
-    <audio id="backgroundMusic" src="./audio/backgroundMusic.mp3" preload loop></audio>
-    <script src="./index.ts"></script>
-</body>
-
+	<head>
+	<meta charset="UTF-8">
+		<title>Fully fledged page</title>
+			<link rel="stylesheet" type="text/css" href="style.css">
+			
+	</head>
+	<body>
+		<div id="sidebar">
+		<a href=""><button class="button" style="height:42px; margin-top: 80px;">Home</button></a>
+		<a href="./game.html"><button class="button" style="height:42px;">Game</button></a>
+		<a href="./about.html"><button class="button" style="height:42px;">About</button></a>
+		<a href=""><button class="button" style="height:42px;">Not yet...</button></a>
+		</div>
+		<div id="clearFloat"></div>
+		<div id="textcontent1">
+			<div id="text1">
+			<h1>Sveiki!</h1>
+			<br></br>
+			<p>Šī lapa ir tapusi pamatā informātikas projektam par HTML5 un CSS3 valodu apguvi. Šo projektu esmu veiksmīgi apvienojis ar programmēšanas projektu kura mērķis bija izveidot pašam savu spēli TypeScript programmēšanas valodā. Un man ir paveicies ar to, ka TypeScript programmēšanas valoda iet ļoti labi kopā ar HTML5 un CSS3, tāpēc tas man nesagādāja lielas problēmas abus projektus apvienot.</p>
+			</div>
+			<div id="infoPost">
+				<h2>Spēli varat apskatīt kreisajā pusē sadaļā 'Game'.</h2>
+				<br> 
+				<h2>Vairāk par spēli varat lasīt sadaļā 'About'.</h2>
+			</div>
+		</div>
+		<div id="clearFloat"></div>
+		<div id="gifholder"><iframe id="homePageImg" src="https://thumbs.gfycat.com/CheerySeparateGoldeneye-size_restricted.gif" scrolling="no" ></iframe></div>
+	</body>
+	
 </html>
+	
