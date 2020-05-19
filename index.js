@@ -35,7 +35,7 @@ window.onfocus = function () {
 
 const shipThurst = createSmokeParticle("lime", 20, 20);
 const context = canvas.getContext("2d");
-let keysPressed: string[] = [];
+let keysPressed = string[] = [];
 let previousTime = 0;
 let shipRotation = 0;
 let velocity = 0;
