@@ -1,4 +1,4 @@
-module.import isPointInside from "point-in-polygon";
+import isPointInside from "point-in-polygon";
 
 import { drawSpaceShip } from "./drawSpaceShip";
 import {
